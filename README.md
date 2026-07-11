@@ -2,7 +2,7 @@
 
 An end-to-end pipeline for a national survey (n=386 valid responses) on how comfortable people are with remote healthcare technologies collecting their data. Python handles multi-source ETL and feature engineering. R handles the statistical analysis. Open-text responses feed a parallel qualitative analysis, making this a mixed-methods project from a single data collection.
 
-**At a glance**
+## At a glance
 
 - Multi-source ETL (Python/pandas): ingestion, validation, cleaning, and integration across two online panels and four paper survey instruments, collected in two rounds
 - Rule-based data validation with an auditable exclusion log (completion time, duplicate detection, attention and plausibility checks)
@@ -82,13 +82,12 @@ An example finding, as reported in `SurveyAnalysis.R`:
 
 > A Kruskal-Wallis test revealed a significant effect of age group on likelihood to use remote healthcare technology (χ²(3)=16.46, p < 0.01). Post-hoc Wilcoxon tests with Bonferroni correction showed differences between the 65+ and 35-49 groups (p < 0.01) and the 65+ and 50-64 groups (p = 0.01). Mean likelihood for the 65+ group (M = 3.34) was lower than for the 35-49 (M = 4.13) and 50-64 (M = 3.94) groups.
 
-
-## Design decisions
+## Design considerations
 
 - **Validate before cleaning.** Data quality decisions live in their own stage with an auditable output file, not buried inside cleaning logic.
 - **Nonparametric tests throughout.** Ordinal data gets ordinal-appropriate methods, at the cost of some statistical power, rather than treating rating points as true numbers.
-- **Effect sizes alongside p-values.** Several significant results are reported as too small to matter in practice, which is the honest reading.
-- **One collection, two analysis tracks.** Cleaned data forks into a quantitative track (R) and a qualitative track (manual coding), and the qualitative track is protected from the numeric encoding.
+- **Effect sizes alongside p-values.** Several significant results are reported as too small to matter in practice, for honest reading.
+- **One collection, two analysis tracks.** Cleaned data split into a quantitative track (R) and a qualitative track (manual coding in NVivo).
 
 ## Repository structure
 
