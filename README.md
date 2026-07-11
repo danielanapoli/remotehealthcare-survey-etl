@@ -68,7 +68,7 @@ data_cleaned_raw.csv / .xlsx           Stage 4: load (handoff to R)
 
 **Stage 4 — Load**
 
-- GOAL: Exports the transformed dataset to files that will be further analyzed with R
+- GOAL: Export the transformed dataset to files that will be further analyzed with R
 - `opentext.py` exports open-text responses by age cohort for qualitative coding, from a pre-encoding copy so free text is never corrupted by the numeric conversion
 - `DataShareAnalysis.R` and `sa6priv.R` read hand-prepared inputs directly; bringing them into the pipeline is roadmap item 2
 
