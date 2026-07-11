@@ -1,6 +1,6 @@
 # Remote Healthcare Survey — ETL Pipeline and Statistical Analysis
 
-An end-to-end pipeline for a national survey (n=386 valid responses) on how comfortable people are with remote healthcare technologies collecting their data. Python handles multi-source ETL and feature engineering. R handles the statistical analysis. Open-text responses feed a parallel qualitative analysis, making this a mixed-methods project from a single data collection.
+An end-to-end pipeline for a national survey (n=384 valid responses) on how comfortable people are with remote healthcare technologies collecting their data. Python handles multi-source ETL and feature engineering. R handles the statistical analysis. Open-text responses feed a parallel qualitative analysis, making this a mixed-methods project from a single data collection.
 
 ## At a glance
 
