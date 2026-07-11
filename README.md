@@ -82,7 +82,6 @@ An example finding, as reported in `SurveyAnalysis.R`:
 
 > A Kruskal-Wallis test revealed a significant effect of age group on likelihood to use remote healthcare technology (χ²(3)=16.46, p < 0.01). Post-hoc Wilcoxon tests with Bonferroni correction showed differences between the 65+ and 35-49 groups (p < 0.01) and the 65+ and 50-64 groups (p = 0.01). Mean likelihood for the 65+ group (M = 3.34) was lower than for the 35-49 (M = 4.13) and 50-64 (M = 3.94) groups.
 
-Visualizations are generated in R (`ggplot2`) and Python (`matplotlib`); outputs are in `/viz`.
 
 ## Design decisions
 
@@ -109,7 +108,7 @@ Visualizations are generated in R (`ggplot2`) and Python (`matplotlib`); outputs
 │   ├── ConcernsAnalysis.R   # concern counts by data type and age
 │   ├── DataShareAnalysis.R  # sharing recipients by data type, age, scenario
 │   └── sa6priv.R            # SA-6/privacy scale analysis by prior experience
-└── viz/                     # output visualizations + generating scripts
+└── viz/                     # visualizations + generating scripts
 ```
 
 ## Running the pipeline
