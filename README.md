@@ -2,6 +2,8 @@
 
 An end-to-end pipeline for a national survey (n=384 valid responses) on how comfortable people are with remote healthcare technologies collecting their data. Python handles multi-source ETL and feature engineering. R handles the statistical analysis. Open-text responses feed a parallel qualitative analysis, making this a mixed-methods project from a single data collection.
 
+*Note: I programmed this ETL pipeline in 2023 to support my PhD research. I have not retouched the code since.*
+
 ## At a glance
 
 - Multi-source ETL (Python/pandas): ingestion, validation, cleaning, and integration across two online panels and four paper survey instruments, collected in two rounds
